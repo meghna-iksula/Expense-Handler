@@ -23,7 +23,7 @@ const NewExpense = (props) => {
 
   return (
     <div className="new-expense">
-      {addExpense? (
+      {addExpense ? ( // Same as "addExpense == true"
         <ExpenseForm
           onCancel={cancelHandler}
           onSaveExpenseData={saveExpenseDataHandler}
