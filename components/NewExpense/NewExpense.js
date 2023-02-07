@@ -9,7 +9,6 @@ const NewExpense = (props) => {
       id: Math.random().toString(),
     };
     props.onAddExpense(expenseData);
-    setAddExpense(false);
   };
 
   const [addExpense, setAddExpense] = useState(false);
