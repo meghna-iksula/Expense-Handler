@@ -46,7 +46,7 @@ const ExpenseForm = (props) => {
   };
 
   const submitHandler = (event) => {
-    event.preventDefault();
+    event.preventDefault(); //Default behaviour of reloading of page on submit can be prevented by this.
 
     const expenseData = {
       title: enteredTitle,
