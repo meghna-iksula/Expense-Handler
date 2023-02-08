@@ -6,16 +6,15 @@ import ExpensesList from "./ExpensesList";
 import ExpensesChart from './ExpensesChart';
 
 function Expenses(props) {
-  const [year, setYear] = useState("2021");
+  const [year, setYear] = useState("2020");
 
   const selectedYearHandler = (selectedYear) => {
     setYear(selectedYear);
   };
-
   const filtereditems = props.items.filter((item) => {
     return item.date.getFullYear().toString() === year; // == does type conversion before comparing, whereas === is strict equality which compares data as well as its type.
   });
-
+  
   return (
     <div>
       <Card className="expenses">
