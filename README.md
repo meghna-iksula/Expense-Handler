@@ -1,4 +1,4 @@
 # Expense-Handler
 
-It is a dynamic website built with the JS library React.
-It is used to keep track of all expenses incurred during a given month and year. 
+It is a dynamic website built with ReactJS, a Javascript library.
+It keeps track of all the monthly expenses incurred during a specific year.
